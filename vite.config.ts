@@ -1,17 +1,14 @@
-// @ts-check
-const preactRefresh = require('@prefresh/vite')
+import preactRefresh from '@prefresh/vite'
+import type { UserConfig } from 'vite'
 
 const pathAliasMap = {
   '@/': '/src/',
 }
 
-/**
- * @type { import('vite').UserConfig }
- */
-const config = {
+const config: UserConfig = {
   resolvers: [
     {
-      alias(path) {
+      alias(path: string) {
         for (const [slug, res] of Object.entries(pathAliasMap)) {
           if (path.startsWith(slug)) {
             return path.replace(slug, res)
@@ -27,4 +24,4 @@ const config = {
   plugins: [preactRefresh()],
 }
 
-module.exports = config
+export default config
