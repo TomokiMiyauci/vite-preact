@@ -1,9 +1,9 @@
-import {  h, render } from 'preact'
+import { h, render } from 'preact'
 import { App } from './app'
 
 import './index.css'
 
 const el = document.getElementById('app')
-if(el) {
+if (el) {
   render(<App />, el)
 }

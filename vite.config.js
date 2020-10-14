@@ -7,9 +7,9 @@ const preactRefresh = require('@prefresh/vite')
 const config = {
   jsx: {
     factory: 'h',
-    fragment: 'Fragment'
+    fragment: 'Fragment',
   },
-  plugins: [preactRefresh()]
+  plugins: [preactRefresh()],
 }
 
 module.exports = config
