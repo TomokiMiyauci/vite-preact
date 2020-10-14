@@ -1,7 +1,8 @@
 import { Logo } from './logo'
 import { Fragment, h } from 'preact'
 
-export function App(props: any) {
+
+export function App() {
   return (
     <>
       <Logo />
