@@ -28,7 +28,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix",
+    "*.{ts,tsx}": "eslint",
     "**/*": "prettier -w -u"
   }
 }
