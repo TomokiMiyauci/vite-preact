@@ -1,4 +1,4 @@
-import { Logo } from './logo'
+import { Logo } from '@/logo'
 import { Fragment, h } from 'preact'
 
 export function App() {
