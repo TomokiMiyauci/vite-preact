@@ -3,7 +3,12 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["preact", "prettier", "prettier/@typescript-eslint"],
+  "extends": [
+    "eslint:all",
+    "preact",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -12,5 +17,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "rules": {}
+  "plugins": ["simple-import-sort", "sort-keys-fix"],
+  "rules": {
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off",
+    "import/order": "off",
+    "sort-keys-fix/sort-keys-fix": "error"
+  }
 }
