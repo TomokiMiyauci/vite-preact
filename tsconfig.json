@@ -18,7 +18,7 @@
     "jsxFragmentFactory": "Fragment",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "/@/*": ["src/*"]
     }
   },
   "include": ["src"]

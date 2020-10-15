@@ -1,7 +1,8 @@
-import { Logo } from '@/logo'
 import { Fragment, h } from 'preact'
 
-export function App() {
+import { Logo } from '/@/logo'
+
+export const App = () => {
   return (
     <>
       <Logo />
