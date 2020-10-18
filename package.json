@@ -35,8 +35,8 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint -f",
+    "*.{ts,tsx}": "eslint --fix",
     "*.{css,scss}": "stylelint --fix",
-    "**/*": "prettier -w -u"
+    "*": "prettier -w -u"
   }
 }
