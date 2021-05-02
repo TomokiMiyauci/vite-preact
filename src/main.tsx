@@ -1,10 +1,9 @@
-import './index.css'
+import '@/styles/global.css'
 
 import { h, render } from 'preact'
 
 import { App } from '@/app'
 
-const el = document.getElementById('app')
-if (el) {
-  render(<App />, el)
-}
+const entryPoint = document.getElementById('app')
+
+if (entryPoint) render(<App />, entryPoint)
