@@ -1,18 +1,18 @@
 import preactRefresh from '@prefresh/vite'
-import { join } from 'path'
+import { resolve } from 'path'
 import type { UserConfig } from 'vite'
 
 const config: UserConfig = {
-  alias: {
-    '/@/': join(__dirname, 'src'),
-  },
-
-  jsx: {
-    factory: 'h',
-    fragment: 'Fragment',
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
   },
 
   plugins: [preactRefresh()],
+
+  resolve: {
+    alias: [{ find: '@', replacement: resolve('src') }],
+  },
 }
 
 export default config
