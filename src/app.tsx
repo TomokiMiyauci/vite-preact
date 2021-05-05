@@ -1,5 +1,5 @@
-import { Fragment, h } from 'preact'
+import { Fragment, FunctionalComponent, h } from 'preact';
 
-export const App = () => {
-  return <></>
-}
+export const App: FunctionalComponent = () => {
+  return <Fragment>Hello There</Fragment>;
+};
